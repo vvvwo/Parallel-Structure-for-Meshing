@@ -1,0 +1,23 @@
+﻿D:\VS\tool\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(411,5): warning MSB8028: 中间目录(x64\Debug\)包含从另一个项目(CVT_Remesh.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
+  MainRemesh.cpp
+E:\Project\Remesh\AIVS_Remesh\PS_AIS_Simplification\LoadPointCloud.hpp(32): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\Project\Remesh\AIVS_Remesh\PS_AIS_Simplification\LoadPointCloud.hpp(39): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\Project\Remesh\AIVS_Remesh\PS_AIS_Simplification\LoadPointCloud.hpp(40): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\Project\Remesh\AIVS_Remesh\PS_AIS_Simplification\LoadPointCloud.hpp(41): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\Project\Remesh\AIVS_Remesh\PS_AIS_Simplification\LoadPointCloud.hpp(42): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\Project\Remesh\AIVS_Remesh\PS_AIS_Simplification\LoadPointCloud.hpp(43): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\Project\Remesh\AIVS_Remesh\PS_AIS_Simplification\LoadPointCloud.hpp(58): warning C4018: “<=”: 有符号/无符号不匹配
+E:\Project\Remesh\AIVS_Remesh\PS_AIS_Simplification\LoadPointCloud.hpp(82): warning C4018: “<=”: 有符号/无符号不匹配
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_math_defines.h(22): warning C4005: “M_PI”: 宏重定义
+  E:\Project\Remesh\AIVS_Remesh\PS_AIS_Simplification\GLM\glm.h(16): note: 参见“M_PI”的前一个定义
+D:\openlib\PCL 1.8.1\include\pcl-1.8\pcl\point_traits.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\openlib\CGAL\CGAL\include\CGAL\boost\graph\Euler_operations.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\openlib\CGAL\CGAL\include\CGAL\boost\graph\Euler_operations.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  Method_AIVS_Remesh.hpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\ucrt\corecrt_math_defines.h(22): warning C4005: “M_PI”: 宏重定义
+  E:\Project\Remesh\AIVS_Remesh\PS_AIS_Simplification\GLM\glm.h(16): note: 参见“M_PI”的前一个定义
+D:\openlib\PCL 1.8.1\include\pcl-1.8\pcl\point_traits.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\openlib\CGAL\CGAL\include\CGAL\boost\graph\Euler_operations.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\openlib\CGAL\CGAL\include\CGAL\boost\graph\Euler_operations.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  正在生成代码...
+  PS_AIS_Simplification.vcxproj -> E:\Project\Remesh\AIVS_Remesh\x64\Debug\AIVS_Remesh.exe

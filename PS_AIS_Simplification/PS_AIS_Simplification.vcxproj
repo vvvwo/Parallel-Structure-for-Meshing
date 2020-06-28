@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{A8BF55EF-6118-43F2-9601-0529C9116D1A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>PSAISSimplification</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>AIVS_Remesh</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 10.2.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\openlib\OpenGL\freeglut64\include;D:\openlib\boost_1_67_0;D:\openlib\Eigen3;D:\openlib\PCL 1.8.1\3rdParty\FLANN\include;D:\openlib\PCL 1.8.1\3rdParty\Qhull\include;D:\openlib\PCL 1.8.1\3rdParty\VTK\include\vtk-8.0;D:\openlib\PCL 1.8.1\include\pcl-1.8;D:\openlib\CGAL\CGAL\include;D:\openlib\CGAL\CGAL_Output\include;D:\openlib\CGAL\CGAL\auxiliary\gmp\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\openlib\OpenGL\freeglut64\lib;D:\openlib\boost_1_67_0\lib64-msvc-14.1;D:\openlib\boost_1_67_0\libs;D:\openlib\PCL 1.8.1\3rdParty\FLANN\lib;D:\openlib\PCL 1.8.1\3rdParty\Qhull\lib;D:\openlib\PCL 1.8.1\3rdParty\VTK\lib;D:\openlib\PCL 1.8.1\lib;D:\openlib\OpenNI\Lib;D:\openlib\CGAL\CGAL_Output\lib;D:\openlib\CGAL\CGAL\auxiliary\gmp\lib;$(LibraryPath)</LibraryPath>
+    <SourcePath>D:\openlib\CGAL\CGAL\src;$(SourcePath)</SourcePath>
+    <ExecutablePath>D:\openlib\OpenGL\freeglut64\bin;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\openlib\OpenGL\freeglut64\include;D:\openlib\boost_1_67_0;D:\openlib\Eigen3;D:\openlib\PCL 1.8.1\3rdParty\FLANN\include;D:\openlib\PCL 1.8.1\3rdParty\Qhull\include;D:\openlib\PCL 1.8.1\3rdParty\VTK\include\vtk-8.0;D:\openlib\PCL 1.8.1\include\pcl-1.8;D:\openlib\Mosek\9.1\tools\platform\win64x86\h;D:\openlib\Mosek\9.1\tools\platform\win64x86\src\fusion_cxx;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\openlib\OpenGL\freeglut64\lib;D:\openlib\boost_1_67_0\lib64-msvc-14.1;D:\openlib\boost_1_67_0\libs;D:\openlib\PCL 1.8.1\3rdParty\FLANN\lib;D:\openlib\PCL 1.8.1\3rdParty\Qhull\lib;D:\openlib\PCL 1.8.1\3rdParty\VTK\lib;D:\openlib\PCL 1.8.1\lib;D:\openlib\OpenNI\Lib;$(LibraryPath)</LibraryPath>
+    <SourcePath>D:\openlib\Mosek\9.1\tools\platform\win64x86\h;D:\openlib\Mosek\9.1\tools\platform\win64x86\src\fusion_cxx;$(SourcePath)</SourcePath>
+    <ExecutablePath>D:\openlib\OpenGL\freeglut64\bin;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_LIB;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <OpenMPSupport>true</OpenMPSupport>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libgmp-10.lib;libmpfr-4.lib;opengl32.lib;freeglutd.lib;pcl_common_debug.lib;pcl_features_debug.lib;pcl_filters_debug.lib;pcl_io_ply_debug.lib;pcl_io_debug.lib;pcl_kdtree_debug.lib;pcl_keypoints_debug.lib;pcl_ml_debug.lib;pcl_octree_debug.lib;pcl_outofcore_debug.lib;pcl_people_debug.lib;pcl_recognition_debug.lib;pcl_registration_debug.lib;pcl_sample_consensus_debug.lib;pcl_search_debug.lib;pcl_segmentation_debug.lib;pcl_stereo_debug.lib;pcl_surface_debug.lib;pcl_tracking_debug.lib;pcl_visualization_debug.lib;libboost_atomic-vc141-mt-gd-x64-1_67.lib;libboost_bzip2-vc141-mt-gd-x64-1_67.lib;libboost_chrono-vc141-mt-gd-x64-1_67.lib;libboost_container-vc141-mt-gd-x64-1_67.lib;libboost_context-vc141-mt-gd-x64-1_67.lib;libboost_coroutine-vc141-mt-gd-x64-1_67.lib;libboost_date_time-vc141-mt-gd-x64-1_67.lib;libboost_exception-vc141-mt-gd-x64-1_67.lib;libboost_fiber-vc141-mt-gd-x64-1_67.lib;libboost_filesystem-vc141-mt-gd-x64-1_67.lib;libboost_graph-vc141-mt-gd-x64-1_67.lib;libboost_iostreams-vc141-mt-gd-x64-1_67.lib;libboost_locale-vc141-mt-gd-x64-1_67.lib;libboost_log-vc141-mt-gd-x64-1_67.lib;libboost_log_setup-vc141-mt-gd-x64-1_67.lib;libboost_math_c99-vc141-mt-gd-x64-1_67.lib;libboost_math_c99f-vc141-mt-gd-x64-1_67.lib;libboost_math_c99l-vc141-mt-gd-x64-1_67.lib;libboost_math_tr1-vc141-mt-gd-x64-1_67.lib;libboost_math_tr1f-vc141-mt-gd-x64-1_67.lib;libboost_math_tr1l-vc141-mt-gd-x64-1_67.lib;libboost_prg_exec_monitor-vc141-mt-gd-x64-1_67.lib;libboost_program_options-vc141-mt-gd-x64-1_67.lib;libboost_python27-vc141-mt-gd-x64-1_67.lib;libboost_random-vc141-mt-gd-x64-1_67.lib;libboost_regex-vc141-mt-gd-x64-1_67.lib;libboost_serialization-vc141-mt-gd-x64-1_67.lib;libboost_signals-vc141-mt-gd-x64-1_67.lib;libboost_system-vc141-mt-gd-x64-1_67.lib;libboost_test_exec_monitor-vc141-mt-gd-x64-1_67.lib;libboost_thread-vc141-mt-gd-x64-1_67.lib;libboost_timer-vc141-mt-gd-x64-1_67.lib;libboost_type_erasure-vc141-mt-gd-x64-1_67.lib;libboost_unit_test_framework-vc141-mt-gd-x64-1_67.lib;libboost_wave-vc141-mt-gd-x64-1_67.lib;libboost_wserialization-vc141-mt-gd-x64-1_67.lib;libboost_zlib-vc141-mt-gd-x64-1_67.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CudaCompile>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_LIB;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;freeglutd.lib;pcl_common_debug.lib;pcl_features_debug.lib;pcl_filters_debug.lib;pcl_io_ply_debug.lib;pcl_io_debug.lib;pcl_kdtree_debug.lib;pcl_keypoints_debug.lib;pcl_ml_debug.lib;pcl_octree_debug.lib;pcl_outofcore_debug.lib;pcl_people_debug.lib;pcl_recognition_debug.lib;pcl_registration_debug.lib;pcl_sample_consensus_debug.lib;pcl_search_debug.lib;pcl_segmentation_debug.lib;pcl_stereo_debug.lib;pcl_surface_debug.lib;pcl_tracking_debug.lib;pcl_visualization_debug.lib;libboost_atomic-vc141-mt-gd-x64-1_67.lib;libboost_bzip2-vc141-mt-gd-x64-1_67.lib;libboost_chrono-vc141-mt-gd-x64-1_67.lib;libboost_container-vc141-mt-gd-x64-1_67.lib;libboost_context-vc141-mt-gd-x64-1_67.lib;libboost_coroutine-vc141-mt-gd-x64-1_67.lib;libboost_date_time-vc141-mt-gd-x64-1_67.lib;libboost_exception-vc141-mt-gd-x64-1_67.lib;libboost_fiber-vc141-mt-gd-x64-1_67.lib;libboost_filesystem-vc141-mt-gd-x64-1_67.lib;libboost_graph-vc141-mt-gd-x64-1_67.lib;libboost_iostreams-vc141-mt-gd-x64-1_67.lib;libboost_locale-vc141-mt-gd-x64-1_67.lib;libboost_log-vc141-mt-gd-x64-1_67.lib;libboost_log_setup-vc141-mt-gd-x64-1_67.lib;libboost_math_c99-vc141-mt-gd-x64-1_67.lib;libboost_math_c99f-vc141-mt-gd-x64-1_67.lib;libboost_math_c99l-vc141-mt-gd-x64-1_67.lib;libboost_math_tr1-vc141-mt-gd-x64-1_67.lib;libboost_math_tr1f-vc141-mt-gd-x64-1_67.lib;libboost_math_tr1l-vc141-mt-gd-x64-1_67.lib;libboost_prg_exec_monitor-vc141-mt-gd-x64-1_67.lib;libboost_program_options-vc141-mt-gd-x64-1_67.lib;libboost_python27-vc141-mt-gd-x64-1_67.lib;libboost_random-vc141-mt-gd-x64-1_67.lib;libboost_regex-vc141-mt-gd-x64-1_67.lib;libboost_serialization-vc141-mt-gd-x64-1_67.lib;libboost_signals-vc141-mt-gd-x64-1_67.lib;libboost_system-vc141-mt-gd-x64-1_67.lib;libboost_test_exec_monitor-vc141-mt-gd-x64-1_67.lib;libboost_thread-vc141-mt-gd-x64-1_67.lib;libboost_timer-vc141-mt-gd-x64-1_67.lib;libboost_type_erasure-vc141-mt-gd-x64-1_67.lib;libboost_unit_test_framework-vc141-mt-gd-x64-1_67.lib;libboost_wave-vc141-mt-gd-x64-1_67.lib;libboost_wserialization-vc141-mt-gd-x64-1_67.lib;libboost_zlib-vc141-mt-gd-x64-1_67.lib;D:\openlib\Mosek\9.1\tools\platform\win64x86\bin\mosek64_9_1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="FileProcess\CBrowseDir.cpp" />
+    <ClCompile Include="FileProcess\LoadFileDlg.cpp" />
+    <ClCompile Include="GenerateRemesh.cpp" />
+    <ClCompile Include="GLM\glm.cpp" />
+    <ClCompile Include="Method_AIVS_Remesh.hpp" />
+    <ClCompile Include="PlyLoad.cpp" />
+    <ClCompile Include="trackball.cpp" />
+    <ClCompile Include="MainRemesh.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ballRegionCompute.hpp" />
+    <ClInclude Include="Method_AIVS_OM.hpp" />
+    <ClInclude Include="FileProcess\CBrowseDir.h" />
+    <ClInclude Include="FileProcess\CStatDir.hpp" />
+    <ClInclude Include="FileProcess\LoadFileDlg.h" />
+    <ClInclude Include="GeneralSimplification.hpp" />
+    <ClInclude Include="GLM\glm.h" />
+    <ClInclude Include="GLM\glmVector.h" />
+    <ClInclude Include="LoadPointCloud.hpp" />
+    <ClInclude Include="Method_CGAL_Advancing.hpp" />
+    <ClInclude Include="normalCompute.hpp" />
+    <ClInclude Include="PlyLoad.h" />
+    <ClInclude Include="pointProcessPipeline.hpp" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="trackball.h" />
+    <ClInclude Include="View.h" />
+    <ClInclude Include="VD.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 10.2.targets" />
+  </ImportGroup>
+</Project>

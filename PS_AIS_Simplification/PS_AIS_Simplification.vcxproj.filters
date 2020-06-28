@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\pointcloud">
+      <UniqueIdentifier>{199e72cd-ada7-49ec-a63c-35e35b0d01f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\fileProcess">
+      <UniqueIdentifier>{18b0f20a-b86c-4860-a0d7-8798e475a7b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Model">
+      <UniqueIdentifier>{0ae2949e-24f6-4f02-9465-14c849f02cf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Simplification">
+      <UniqueIdentifier>{dd36709b-53ae-4a77-ba11-f6964d212cf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\VoronoiDiagram">
+      <UniqueIdentifier>{894df610-978f-4aaf-a40a-b28450c807f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Remesh">
+      <UniqueIdentifier>{617b6098-d7e5-43bb-a6a3-4976a578b926}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PlyLoad.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="trackball.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FileProcess\CBrowseDir.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FileProcess\LoadFileDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GLM\glm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GenerateRemesh.cpp">
+      <Filter>头文件\Remesh</Filter>
+    </ClCompile>
+    <ClCompile Include="MainRemesh.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Method_AIVS_Remesh.hpp">
+      <Filter>头文件\Remesh</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="trackball.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="View.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pointProcessPipeline.hpp">
+      <Filter>头文件\pointcloud</Filter>
+    </ClInclude>
+    <ClInclude Include="normalCompute.hpp">
+      <Filter>头文件\pointcloud</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadPointCloud.hpp">
+      <Filter>头文件\pointcloud</Filter>
+    </ClInclude>
+    <ClInclude Include="ballRegionCompute.hpp">
+      <Filter>头文件\pointcloud</Filter>
+    </ClInclude>
+    <ClInclude Include="FileProcess\CBrowseDir.h">
+      <Filter>头文件\fileProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="FileProcess\CStatDir.hpp">
+      <Filter>头文件\fileProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="FileProcess\LoadFileDlg.h">
+      <Filter>头文件\fileProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="PlyLoad.h">
+      <Filter>头文件\fileProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="GLM\glm.h">
+      <Filter>头文件\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="GLM\glmVector.h">
+      <Filter>头文件\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneralSimplification.hpp">
+      <Filter>头文件\Simplification</Filter>
+    </ClInclude>
+    <ClInclude Include="VD.hpp">
+      <Filter>头文件\VoronoiDiagram</Filter>
+    </ClInclude>
+    <ClInclude Include="Method_AIVS_OM.hpp">
+      <Filter>头文件\Simplification</Filter>
+    </ClInclude>
+    <ClInclude Include="Method_CGAL_Advancing.hpp">
+      <Filter>头文件\Remesh</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
