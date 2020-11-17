@@ -2,7 +2,8 @@
 
 2020/11
 
-Voxel structure-based mesh reconstruction. For now, it is a pre-version which includes the inital mesh reconstruction without mesh optimization. When related papers are published, then the complete version will be released.
+Project name has been changed to Voxel structure-based mesh reconstruction.
+For now, it is a pre-version which includes the inital mesh reconstruction without mesh optimization. When related papers are published, then the complete version will be released.
 
 2020/07
 
