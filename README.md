@@ -1,4 +1,11 @@
 # Parallel-Structure-for-Meshing
+
+2020/11
+
+Voxel structure-based mesh reconstruction. For now, it is a pre-version which includes the inital mesh reconstruction without mesh optimization. When related papers are published, then the complete version will be released.
+
+2020/07
+
 The code of Parallel Structure, which is used to reconstruct mesh from 3D Point Cloud.
 
 The project is build on VS2019.
@@ -12,4 +19,6 @@ CGAL library
 PCL library
 
 The project has relationship with AIVS simplification. Therefore the project is called AIVS Remesh.
+
+
 
