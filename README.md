@@ -1,5 +1,9 @@
 # Parallel-Structure-for-Meshing
 
+2021/04
+
+The related paper, "Voxel Structure-based Mesh Reconstruction from a 3D Point Cloud", is accepted by IEEE Transactions on Multimedia.
+
 2020/11
 
 Project name has been changed to Voxel structure-based mesh reconstruction.
