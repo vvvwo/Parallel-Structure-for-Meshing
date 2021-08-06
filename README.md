@@ -10,6 +10,12 @@ Project Link: https://aliexken.github.io/subSet/MeshReconstruction.html
 
 ![image](https://user-images.githubusercontent.com/65271555/128494938-a9bc0097-5dc8-4b4d-88dd-36ceef508f72.png)
 
+## Libiary
+
+CGAL 4.0+
+
+PCL 1.8.1+
+
 ## Updating
 
 2021/04
