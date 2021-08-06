@@ -1,5 +1,17 @@
 # Parallel-Structure-for-Meshing
 
+This project is related to the paper: Lv C, Lin W, Zhao B. Voxel Structure-based Mesh Reconstruction from a 3D Point Cloud[J]. IEEE Transactions on Multimedia, 2021.
+
+Created by Chenlei Lv from Nanyang Technological University.
+
+Personal Website: https://aliexken.github.io/
+
+Project Link: https://aliexken.github.io/subSet/MeshReconstruction.html
+
+![image](https://user-images.githubusercontent.com/65271555/128494938-a9bc0097-5dc8-4b4d-88dd-36ceef508f72.png)
+
+## Updating
+
 2021/04
 
 The related paper, "Voxel Structure-based Mesh Reconstruction from a 3D Point Cloud", is accepted by IEEE Transactions on Multimedia.
