@@ -10,6 +10,10 @@ Project Link: https://aliexken.github.io/subSet/MeshReconstruction.html
 
 ![image](https://user-images.githubusercontent.com/65271555/128494938-a9bc0097-5dc8-4b4d-88dd-36ceef508f72.png)
 
+## Abstract
+
+Mesh reconstruction from a 3D point cloud is an important topic in the fields of computer graphic, computer vision, and multimedia analysis. In this paper, we propose a voxel structure-based mesh reconstruction framework. It provides the intrinsic metric to improve the accuracy of local region detection. Based on the detected local regions, an initial reconstructed mesh can be obtained. With the mesh optimization in our framework, the initial reconstructed mesh is optimized into an isotropic one with the important geometric features such as external and internal edges. The experimental results indicate that our framework shows great advantages over peer ones in terms of mesh quality, geometric feature keeping, and processing speed.
+
 ## Libiary
 
 PCL 1.8.1: https://pointclouds.org/downloads/
