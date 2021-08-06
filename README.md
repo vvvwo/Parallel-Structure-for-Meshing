@@ -12,9 +12,11 @@ Project Link: https://aliexken.github.io/subSet/MeshReconstruction.html
 
 ## Libiary
 
-CGAL 4.0+
+PCL 1.8.1: https://pointclouds.org/downloads/
 
-PCL 1.8.1+
+CGAL: https://www.cgal.org/
+
+freeglut64: http://freeglut.sourceforge.net/index.php#download
 
 ## Updating
 
